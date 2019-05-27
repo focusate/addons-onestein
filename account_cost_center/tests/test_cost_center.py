@@ -1,9 +1,10 @@
 # Copyright 2017-2018 Onestein (<http://www.onestein.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
-
+from odoo.tests import common
 from odoo.addons.account.tests.account_test_classes import AccountingTestCase
 
 
+@common.tagged('post_install', '-at_install')
 class TestAccountCostCenter(AccountingTestCase):
 
     def setUp(self):
